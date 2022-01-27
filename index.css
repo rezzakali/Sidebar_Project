@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Mulish:wght@300&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins 300;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #11101d;
+  padding: 6px 14px;
+  width: 90px;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-content .bxl-react {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.sidebar .logo-content .logo {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sidebar ul {
+  margin-top: 20px;
+}
+.sidebar ul li {
+  list-style: none;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+.sidebar ul li a {
+  position: relative;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.nav-list li i {
+  font-size: 24px;
+  color: white;
+}
+.nav-list li a i {
+  height: 50px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li .tooltip {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  visibility: hidden;
+  bottom: 20px;
+  transition: all 0.1s ease-in;
+}
+.nav-list li:hover .tooltip {
+  visibility: visible;
+  color: white;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar{
+        visibility: hidden;
+    }   
+}
